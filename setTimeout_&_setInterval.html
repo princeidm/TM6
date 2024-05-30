@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <p id="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p id="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p id="paragraf3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+        <button class="btn btn-primary" onclick="start();">Mulai</button>
+        
+    
+
+
+    <script>
+       const p1 = document.getElementById('paragraf1');
+       const p2 = document.getElementById('paragraf2');
+       const p3 = document.getElementById('paragraf3');
+       let counter = 1;
+       
+       function start() {
+
+        const rubah = setInterval (() => {
+            setTimeout (() => {
+                p1.style.color = "black";
+                p2.style.color = "black";
+                p3.style.color = "black";
+            }, 999);
+            
+        
+         
+            p1.style.color = "black";
+            p2.style.color = "black";
+            p3.style.color = "black";
+
+            if (counter % 2 === 0){
+                p1.style.color = "red";
+                p2.style.color = "green";
+                p3.style.color = "blue";
+                } else {
+                    p1.style.color = "red";
+                    p2.style.color = "green";
+                    p3.style.color = "blue";
+                }
+                console.log(counter);
+                counter++;
+                
+
+
+       }, 2000);
+
+    }
+
+       
+        
+
+       
+       
+
+       
+
+      
+
+
+       
+
+
+
+    </script>
+
+</body>
+
+</html>
